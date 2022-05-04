@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jhonatan Oliveira | Meu portfólio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+      integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo Jhonatan" />
+        <h4>JhonatanOliveira.</h4>
+      </div>
+      <ul>
+        <li>
+          <a href="https://github.com/jhonatanoliveiradev" target="_blank"
+            ><i class="fa-brands fa-github"></i> GitHub</a
+          >
+        </li>
+        <li>
+          <a href="https://wa.me/5516996033206" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i> WhatsApp</a
+          >
+        </li>
+        <li>
+          <a href="mailto:jhonatan.oliveira931002@gmail.com" target="_blank"
+            ><i class="fa-solid fa-at"></i></i></i> E-mail</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="name">
+            <img src="images/perfil.png" alt="">
+            <h1>Jhonatan Oliveira</h1>
+            <h5>Frontend Developer</h5>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div><!-- arrow -->
+
+            <div style="display: none;" id="about">
+                <p>
+                    Foco em desenvolvimento com JavaScript, React.Js, NodeJS, React Native, 
+                    TypeScript, Styled-Components entre outras linguagens, bibliotecas e 
+                    frameworks que utilizo na criação de aplicações, sites e sistemas. 
+                    Conhecimento de Design Gráfico e UI/UX Design, os quais utilizo para aprimorar 
+                    meus projetos e tornar a experiência do usuário a melhor e mais imersiva possível. 
+                    Gosto muito de aprender e estou em constante busca por conhecimento.
+                </p>
+            </div><!-- #about -->
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail" />
+                    <button type="submit">Enviar</button>
+                </form>
+            </div><!-- form -->
+        </div><!-- name -->
+       </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icon">
+        <li><a href="https://facebook.com/eujhonatanoliveira" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://instagram.com/peveslol" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://linkedin.com/jhonatan-oliveira1693" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://twitter.com/peveslol" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon></a></li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="https://github.com/jhonatanoliveiradev" target="_blank"
+            ><i class="fa-brands fa-github"></i> GitHub</a
+          >
+        </li>
+        <li>
+          <a href="https://wa.me/5516996033206" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i> WhatsApp</a
+          >
+        </li>
+        <li>
+          <a href="mailto:jhonatan.oliveira931002@gmail.com" target="_blank"
+            ><i class="fa-solid fa-at"></i></i></i> E-mail</a
+          >
+        </li>
+      </ul>
+      <p>
+        &copy; 2022 <a href="https:www.jhonatanoliveira.com/">Jhonatan Oliveira</a> | Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById("about");
+            display.classList.toggle('active');
+        }
+    </script>
+  </body>
+</html>
