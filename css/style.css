@@ -1,0 +1,477 @@
+@import url(http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+html::-webkit-scrollbar {
+  width: 0.6rem;
+}
+html::-webkit-scrollbar-track {
+  background: #48d4f4;
+}
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 0.8rem;
+}
+
+body {
+  background: linear-gradient(to right, #381abd, #49e1f8);
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #381abd, #49e1f8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 9%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+.header.active {
+  background: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #10221b;
+}
+
+.logo img {
+  cursor: pointer;
+  width: 1.6rem;
+  height: auto;
+  filter: invert(1);
+}
+
+.logo img:hover {
+  filter: invert(0);
+}
+
+.header h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.header h4:hover {
+  color: #10221b;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.header ul li {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #10221b;
+  cursor: pointer;
+}
+
+.header ul li a {
+  color: #10221b;
+  transition: 0.2s ease-in-out;
+}
+
+.header ul li a:hover {
+  color: aliceblue;
+}
+
+.container {
+  background: #fff;
+  width: 60%;
+  height: 80vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+.circle1,
+.circle2 {
+  background: #fff;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+
+.container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .name img {
+  width: 10rem;
+  height: auto;
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.4));
+}
+
+.container .name h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #10221b;
+}
+
+.container .name h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #10221b;
+}
+
+#arrow {
+  font-size: 2.5rem;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#animation {
+  transition: initial 300ms;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.active {
+  display: block !important;
+}
+
+#about p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #10221b;
+}
+
+.form {
+  padding: 2rem;
+}
+
+.form div p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #10221b;
+}
+
+.form input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.form button {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.form button:hover {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.8)
+  );
+  color: #381abd;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  min-height: 6rem;
+  padding: 1.5rem 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(2rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.6rem 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 1.6rem;
+  color: #10221b;
+  margin: 0 0.6rem;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+  color: aliceblue;
+}
+
+footer .menu li a {
+  font-size: 1.2rem;
+  color: #10221b;
+  margin: 0 0.6rem;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer p {
+  color: #10221b;
+  text-align: center;
+  margin-top: 0.9rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+footer p a {
+  color: #10221b;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: aliceblue;
+}
+
+/*footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../images/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 0.7;
+  bottom: 0;
+  animation: animateWave 8s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 8s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave_03 7s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_04 7s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animateWave_03 {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_04 {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}*/
+
+/* media queries */
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 80%;
+  }
+
+  .header {
+    padding: 1rem 3%;
+  }
+
+  .header h4 {
+    font-size: 1.2rem;
+  }
+
+  .header ul {
+    margin-left: 0;
+  }
+
+  .header ul li {
+    margin-left: 0.5rem;
+  }
+
+  .header ul li a {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    height: 70vh;
+  }
+
+  .container .name h1 {
+    font-size: 2rem;
+  }
+
+  .container .name h5 {
+    font-size: 1rem;
+  }
+
+  .container .name img {
+    display: none;
+  }
+
+  .form {
+    padding: 1rem;
+  }
+
+  .form input {
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .form button {
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
